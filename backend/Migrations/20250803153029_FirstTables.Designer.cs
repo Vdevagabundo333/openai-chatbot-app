@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HighCapital.Chatbot.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250803151024_FirstTables")]
+    [Migration("20250803153029_FirstTables")]
     partial class FirstTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
