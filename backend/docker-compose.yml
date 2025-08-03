@@ -1,0 +1,24 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ASPNETCORE_URLS=${ASPNETCORE_URLS}
+      - ASPNETCORE_DATABASE_CONNECTION=Data Source=${ASPNETCORE_DATABASE_CONNECTION}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+
+  ef:
+    build:
+      context: .
+      dockerfile: Dockerfile.ef
+    volumes:
+      - .:/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - ASPNETCORE_DATABASE_CONNECTION=${ASPNETCORE_DATABASE_CONNECTION}
