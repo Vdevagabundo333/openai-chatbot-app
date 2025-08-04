@@ -21,6 +21,36 @@ Permitir a criação de múltiplos bots com contextos personalizados e interaç�
 
 ---
 
+## 🚀 Como Iniciar o Projeto Completo (Docker)
+
+### Pré-requisitos
+* Docker Desktop instalado e em execução.
+
+### 1: Clonar o repositório
+`git clone <url-do-repositorio>`
+
+`cd HighCapital-Desafio-Tecnico`
+
+### 2. Configurar o arquivo de ambiente
+Na raiz do projeto, copie o arquivo `.env.example` para `.env` e configure suas variáveis, incluindo a chave da API da OpenAI.
+
+```bash
+cp .env.example .env
+```
+
+### 3. Subir o ambiente completo
+Execute o comando abaixo na raiz do projeto para construir as imagens e iniciar os contêineres do backend e do frontend. As migrations do banco de dados serão aplicadas automaticamente no início.
+
+```bash
+docker compose up --build
+```
+
+### 4. Acessar a aplicação
+  - **Frontend**: http://localhost:3000
+  - **Backend (API)**: http://localhost:5000
+
+---
+
 #### Listagem dos bots do chatbot
 ![Listagem dos bots do chatbot](.github/bots-list.png)
 

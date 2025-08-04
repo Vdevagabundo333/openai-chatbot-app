@@ -1,17 +1,20 @@
-# HighCapital-Desafio-Tecnico
+# HighCapital-Desafio-Tecnico - Backend
 
-## 🚀 Como iniciar a aplicação do zero
-Este guia ajuda você a configurar, rodar e preparar a aplicação backend (API C#) com banco SQLite, incluindo a criação do banco e das tabelas via migrations do Entity Framework Core.
+Este é o serviço de backend do projeto, uma API REST em C# com ASP.NET Core, Entity Framework Core e SQLite para persistência.
+
+## 🚀 Como Iniciar
+
+A forma recomendada de iniciar este serviço é através do **Docker Compose na raiz do projeto**. Você só precisará do Docker instalado.
+
+Para rodar localmente fora do Docker, siga as instruções abaixo:
 
 ### Pré-requisitos
-* .NET 6 SDK instalado na sua máquina
+* .NET 6 SDK instalado
 * Docker instalado (se for usar via container)
 * Editor de código (ex: VS Code)
 
-### 1: Clonar o repositório
-`git clone <url-do-repositorio>`
-
-`cd HighCapital-Desafio-Tecnico`
+### 1. Configurar as variáveis de ambiente
+Crie um arquivo `.env` na raiz do backend, seguindo o `.env.example`, e defina as variáveis necessárias.
 
 ### 2. Subir o ambiente completo (build + run)
 ```
@@ -19,7 +22,7 @@ docker compose up --build -d
 ```
 
 ### 3. Rodar as migrations (criar o banco e as tabelas)
-```bash
+```
 docker compose run --rm ef database update --project /app/HighCapital.Chatbot.Api.csproj
 ```
 
@@ -41,11 +44,12 @@ ou abra o Swagger (se configurado):
 http://localhost:5000/swagger
 
 ### Tecnologias utilizadas
-* .NET 6
-* Entity Framework Core + SQLite
-* Docker
-* OpenAI API (ChatGPT)
-* ReactJS (frontend separado)
+
+  * .NET 6
+  * Entity Framework Core + SQLite
+  * Docker
+  * OpenAI API (ChatGPT)
+  * ReactJS (frontend separado)
 
 ---
 
