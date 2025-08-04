@@ -1,6 +1,4 @@
 using OpenAI_API;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace HighCapital.Chatbot.Api.Services
 {
