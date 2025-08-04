@@ -26,8 +26,10 @@ const Index = () => {
   }
 
   useEffect(() => {
-    getBotsList();
-  }, [])
+    if (activeView === 'list') {
+      getBotsList();
+    }
+  }, [activeView])
 
   const handleCreateBot = async (botData: Bot) => {
     try {
