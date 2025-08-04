@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HighCapital.Chatbot.Api.Data;
 using HighCapital.Chatbot.Api.Models;
-using System.Threading.Tasks;
 
 namespace HighCapital.Chatbot.Api.Controllers
 {
@@ -23,6 +22,13 @@ namespace HighCapital.Chatbot.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() => Ok(await _context.Bots.ToListAsync());
+        public async Task<IActionResult> GetAll()
+        {
+            var botsWithMessages = await _context.Bots
+                .Include(bot => bot.Messages)
+                .ToListAsync();
+
+            return Ok(botsWithMessages);
+        }
     }
 }

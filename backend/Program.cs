@@ -1,20 +1,30 @@
-using Microsoft.AspNetCore.Builder;
+using System.Reflection;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using HighCapital.Chatbot.Api.Data;
 using HighCapital.Chatbot.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+    options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
+});
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlite("Data Source=/app/data/chatbots.db"));
 
-var openAiApiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+var openAiApiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "";
+
 builder.Services.AddSingleton(new ChatService(openAiApiKey));
 
 var app = builder.Build();

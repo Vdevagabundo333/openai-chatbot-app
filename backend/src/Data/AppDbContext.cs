@@ -5,8 +5,8 @@ namespace HighCapital.Chatbot.Api.Data
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Bot> Bots { get; set; }
-        public DbSet<ChatMessage> Messages { get; set; }
+        public DbSet<Bot> Bots { get; set; } = null!;
+        public DbSet<ChatMessage> Messages { get; set; } = null!;
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
