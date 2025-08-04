@@ -3,6 +3,8 @@ using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using HighCapital.Chatbot.Api.Data;
 using HighCapital.Chatbot.Api.Services;
+using HighCapital.Chatbot.Api.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
@@ -19,12 +21,11 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
 });
 
-var FRONTEND_URL = Environment.GetEnvironmentVariable("FRONTEND_URL") ?? "";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(FRONTEND_URL)
+        policy.WithOrigins(Env.FRONTEND_URL)
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
@@ -32,10 +33,9 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqlite("Data Source=/app/data/chatbots.db"));
+    opt.UseSqlite($"Data Source={Env.ASPNETCORE_DATABASE_CONNECTION}"));
 
-var openAiApiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "";
-builder.Services.AddSingleton(new ChatService(openAiApiKey));
+builder.Services.AddSingleton(new ChatService(Env.OPENAI_API_KEY));
 
 var app = builder.Build();
 
