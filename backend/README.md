@@ -46,3 +46,9 @@ http://localhost:5000/swagger
 * Docker
 * OpenAI API (ChatGPT)
 * ReactJS (frontend separado)
+
+---
+
+## 📄 Licença
+
+Projeto criado por [Tiago Castro](https://www.linkedin.com/in/tiagogoncalvesdecastro) como parte do desafio técnico da HighCapital.
