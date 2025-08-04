@@ -21,6 +21,14 @@ Permitir a criação de múltiplos bots com contextos personalizados e interaç�
 
 ---
 
+#### Listagem dos bots do chatbot
+![Listagem dos bots do chatbot](.github/bots-list.png)
+
+#### Mensagens do chatbot
+![Mensagens do chatbot](.github/bot-message-list.png)
+
+---
+
 ## 📄 Licença
 
 Projeto criado por [Tiago Castro](https://www.linkedin.com/in/tiagogoncalvesdecastro) como parte do desafio técnico da HighCapital.
